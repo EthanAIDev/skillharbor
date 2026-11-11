@@ -1,0 +1,62 @@
+[
+  {
+    "username": "admin",
+    "name": "Administrator",
+    "role": "admin",
+    "dept": "Platform",
+    "deptShort": "Platform",
+    "title": "Admin",
+    "phone": "",
+    "email": ""
+  },
+  {
+    "username": "alice",
+    "name": "Alice Demo",
+    "role": "user",
+    "dept": "Engineering",
+    "deptShort": "Engineering",
+    "title": "Engineer",
+    "phone": "",
+    "email": ""
+  },
+  {
+    "username": "bob",
+    "name": "Bob Demo",
+    "role": "user",
+    "dept": "Operations",
+    "deptShort": "Operations",
+    "title": "Operator",
+    "phone": "",
+    "email": ""
+  },
+  {
+    "username": "liuyang",
+    "name": "Dept Maintainer",
+    "role": "user",
+    "dept": "政技部",
+    "deptShort": "政技部",
+    "title": "Maintainer",
+    "phone": "",
+    "email": ""
+  },
+  {
+    "username": "huangyating",
+    "name": "Consulting Reader",
+    "role": "user",
+    "dept": "咨询所",
+    "deptShort": "咨询所",
+    "title": "Reader",
+    "phone": "",
+    "email": ""
+  },
+  {
+    "username": "lidan",
+    "name": "Research Reader",
+    "role": "user",
+    "dept": "研究院",
+    "deptShort": "研究院",
+    "title": "Reader",
+    "phone": "",
+    "email": ""
+  }
+]

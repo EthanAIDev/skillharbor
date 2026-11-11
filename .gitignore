@@ -1,0 +1,44 @@
+# Dependencies & build
+node_modules/
+dist/
+tsconfig.tsbuildinfo
+
+# Runtime data (password hashes, session secrets) — never commit
+/data/
+*.log
+
+# Legacy generated user rosters
+src/data/users.gen.json
+
+# Packaging / temp
+skillharbor-deploy*.tgz
+output/
+skills_extracted/
+*.tgz
+*.zip
+
+# Local tooling
+.workbuddy/
+.playwright-mcp/
+.playwright-cli/
+.zcode/
+.tmp-*/
+.validation/
+exports/
+research/
+__pycache__/
+*.py[cod]
+
+# Env files (keep examples)
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Screenshots (keep installer guide assets)
+*.png
+!files/guide/*.png
+
+# Export helpers (local only)
+OSS_EXPORT_MANIFEST.json
+scripts/sanitize-*.cjs

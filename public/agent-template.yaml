@@ -1,0 +1,18 @@
+# 将此文件保存为 agent.yaml，与主入口及子技能一起打包。
+# id 必须稳定且唯一；更新已有资源时与原 slug 相同。
+schemaVersion: 1
+id: example-business-agent
+kind: agent
+version: 1.0.0
+entry: SKILL.md
+components:
+  - id: calculator
+    kind: skill
+    path: internal-skills/calculator.md
+    visibility: internal
+# 按实际注册的技能 slug 填写依赖；无外部依赖时保留 []。
+dependencies: []
+steps:
+  - id: calculation
+    task: 执行计算
+    targets: [component:calculator]

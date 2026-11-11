@@ -1,0 +1,20 @@
+# Example Compose — copy and fill env values. Do not commit real secrets.
+services:
+  portal:
+    image: skillharbor:local
+    build: .
+    ports:
+      - "8900:8100"
+    environment:
+      PORTAL_URL: http://127.0.0.1:8900
+      ONE_API_BASE: http://one-api:3000
+      ONE_API_ADMIN_TOKEN: ${ONE_API_ADMIN_TOKEN:-}
+      SKILL_GATEWAY_BASE: http://skill-gateway:8800
+      SKILL_GATEWAY_TOKEN: ${SKILL_GATEWAY_TOKEN:-}
+      FEISHU_WEBHOOK_URL: ${FEISHU_WEBHOOK_URL:-}
+    volumes:
+      - skillharbor-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  skillharbor-data:
