@@ -35,9 +35,10 @@ __pycache__/
 !.env.example
 !.env.template
 
-# Screenshots (keep installer guide assets)
+# Screenshots (keep installer guide + README demos)
 *.png
 !files/guide/*.png
+!docs/screenshots/*.png
 
 # Export helpers (local only)
 OSS_EXPORT_MANIFEST.json
